@@ -4,9 +4,9 @@ body {
 }
 
 h1 {
-  color: #e60073;
-  font-family: fantasy;
-  font-size: 35px;
+  color: #004d80;
+  font-family: cursive;;
+  font-size: 2.5em;
   text-align: center;
   font-weight: bold;
 }
@@ -20,12 +20,15 @@ p {
 
 #nav li{
   list-style-type: none;
+  float: left;
+  width: 25%;
+  font-size: 1.5em;
 }
 
 #nav a:link, a:visited {
   display: block;
   color: #fff;
-  background-color: #ffb3d9;
+  background-color: #004d80;
   font-weight: bold;
   text-align: center;
   text-decoration: none;
@@ -34,7 +37,7 @@ p {
 }
 
 #nav a:hover, a:active {
-  background-color: #e60073;
+  background-color: #00bfff;
 }
 
 title {
