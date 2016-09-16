@@ -1,3 +1,53 @@
-p{
+body {
+  text-align: center;
+  background-color: #e6ffff;
+}
 
+h1 {
+  color: #e60073;
+  font-family: fantasy;
+  font-size: 35px;
+  text-align: center;
+  font-weight: bold;
+}
+
+p {
+  color: black;
+  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+  font-size: 19px;
+  font-weight: normal;
+}
+
+#nav li{
+  list-style-type: none;
+}
+
+#nav a:link, a:visited {
+  display: block;
+  color: #fff;
+  background-color: #ffb3d9;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  padding: 4px;
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+#nav a:hover, a:active {
+  background-color: #e60073;
+}
+
+title {
+  font-family: Georgia, "Times New Roman", serif;
+  color: green;
+}
+
+#container{
+  width: 95%;
+  background-color:#e6ffff;
+  margin: 0 auto;
+}
+
+img {
+  border-style: none;
 }
