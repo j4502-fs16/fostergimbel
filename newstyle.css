@@ -1,62 +1,70 @@
 body {
-  text-align: center;
-  background-color: #e6ffff;
+  text-align:center;
+  background-color: #b3ecff;
 }
 
 h1 {
-  color: #004d80;
-  font-family: 'Raleway', sans-serif;
+  color: #fff;
+  font-family: 'Playfair Display', serif;
   font-size: 2.5rem;
   text-align: center;
-  font-weight: bold;
-  margin: 1.2rem;
+  font-weight: lighter;
+  padding-top: 1rem;
 }
 
 ul {
-  margin: 2rem;
+  margin: .4rem;
   padding: 0.25rem;
 }
 
 p {
-  color: black;
-  font-family: 'Cormorant Garamond', serif;
+  color: #b3ecff;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-weight: lighter;
   font-size: 1.2rem;
-  font-weight: normal;
 }
 
 #nav li{
+  font-family: 'Roboto Condensed', sans-serif;
+  font-weight: lighter;
   list-style-type: none;
   float: left;
   width: 25%;
-  font-size: 1rem;
+  font-size: 1.4rem;
 }
 
 #nav a:link, a:visited {
   display: block;
-  color: #fff;
-  background-color: #004d80;
+  color: #00131a;
+  background-color: #b3ecff;
   font-weight: bold;
   text-align: center;
   text-decoration: none;
   padding: 0.25rem;
-  font-family: Helvetica, Arial, sans-serif;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-weight: lighter;
 }
 
 #nav a:hover, a:active {
-  background-color: #00bfff;
+  background-color: #fff;
+  color: #00131a;
+  font-weight: bold;
 }
 
 title {
-  font-family: Georgia, "Times New Roman", serif;
-  color: green;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-weight: lighter;
 }
 
 #container{
   width: 95%;
-  background-color:#e6ffff;
+  background-color:#00131a;
   margin: 0 auto;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 
 img {
   border-style: none;
+  padding-bottom: 1rem;
 }
