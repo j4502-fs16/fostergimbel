@@ -49,7 +49,7 @@ ul {
   font-weight: lighter;
   list-style-type: none;
   float: left;
-  width: 25%;
+  /*width: 25%;*/
   font-size: 1.4rem;
 }
 
@@ -89,7 +89,7 @@ img {
   padding-right: 1rem;
 }
 
-.header, .main, .aside, {
+.header, .main, .aside {
   flex: 1 100%;
   padding: 10px;
 }
@@ -111,7 +111,7 @@ img {
     #nav a:hover, a:active {
       background-color: #fff;
       color: #00131a;
-      font-weight: bold;
+      /*font-weight: bold;*/
     }
 
       .main {
@@ -127,7 +127,7 @@ img {
 
       .aside {
         display: flex;
-        flex: 1; auto;
+        flex: 1 auto;
         flex-flow: row wrap;
       }
 
