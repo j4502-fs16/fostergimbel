@@ -12,9 +12,23 @@ h1 {
   padding-top: 1rem;
 }
 
-ul {
-  margin: .4rem;
-  padding: 0.25rem;
+.nav {
+  list-style: none;
+  display: flex;
+  flex-flow:column;
+  width: 100%;
+  background: #b3ecff;
+  margin: auto;
+}
+
+.nav a{
+  text-decoration: none;
+  display: flex;
+  text-align:center;
+}
+
+.nav li{
+  width: 100%
 }
 
 p {
@@ -22,6 +36,12 @@ p {
   font-family: 'Roboto Condensed', sans-serif;
   font-weight: lighter;
   font-size: 1.2rem;
+}
+
+ul {
+  margin: .4rem;
+  padding: 0.25rem;
+  text-align: center;
 }
 
 #nav li{
@@ -45,12 +65,6 @@ p {
   font-weight: lighter;
 }
 
-#nav a:hover, a:active {
-  background-color: #fff;
-  color: #00131a;
-  font-weight: bold;
-}
-
 title {
   font-family: 'Roboto Condensed', sans-serif;
   font-weight: lighter;
@@ -67,4 +81,54 @@ title {
 img {
   border-style: none;
   padding-bottom: 1rem;
+  width: 35%;
+  height: 35%;
 }
+
+.main {
+  padding-right: 1rem;
+}
+
+.header, .main, .aside, {
+  flex: 1 100%;
+  padding: 10px;
+}
+
+.aside {
+  text-align: center;
+  flex-flow: row wrap;
+}
+
+@media (min-width: 800px){
+
+    .nav {
+      display: flex;
+      flex: 1;
+      flex-flow: row;
+      justify-content: space-around;
+    }
+
+    #nav a:hover, a:active {
+      background-color: #fff;
+      color: #00131a;
+      font-weight: bold;
+    }
+
+      .main {
+        display: flex;
+        flex-flow: row;
+        flex: 1;
+      }
+
+      img {
+        width: 50%;
+        height: 50%;
+      }
+
+      .aside {
+        display: flex;
+        flex: 1; auto;
+        flex-flow: row wrap;
+      }
+
+  }
