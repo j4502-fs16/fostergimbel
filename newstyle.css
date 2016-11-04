@@ -90,6 +90,7 @@ img {
   border-style: none;
   padding-bottom: 1rem;
   width: 35%;
+  margin-right: 20px;
 }
 
 .main {
@@ -101,6 +102,13 @@ img {
   padding: 10px;
 }
 
+.footer {
+  background-color: #ffe6ee;
+  text-align: right;
+  color: #99004d;
+  font-size: 0.8rem;
+}
+
 .aside {
   text-align: center;
   flex-flow: row wrap;
@@ -108,6 +116,17 @@ img {
 
 .aside-2 {
   display: none;
+}
+
+.work {
+  color: #fff;
+  background-color: #99004d;
+  font-family: 'Playfair Display', serif;
+  font-size: 1.5rem;
+  text-align: left;
+  font-weight: lighter;
+  margin: 10px;
+  padding-left: 10px;
 }
 
 @media only screen and (min-width: 480px) {
@@ -132,6 +151,9 @@ img {
       }
 
       img {
+        display: flex;
+        align-items: center;
+        justify-content: center;
         width: 100%;
       }
 
@@ -142,7 +164,37 @@ img {
       }
 
       .aside-2 {
+        font-family: 'Roboto Condensed', sans-serif;
+        font-weight: lighter;
         display: inline;
+      }
+
+      .aside-1 {
+        display: flex;
+      }
+
+      .links {
+        display: flex;
+        flex-flow: row wrap;
+        margin: 10px;
+        justify-content: center;
+        justify-content: space-around;
+
+      }
+
+      #GJ {
+        width: 10%;
+        height: auto;
+      }
+
+      #VOX {
+        width: 15%;
+        height: auto;
+      }
+
+      #Missourian {
+        width: 10%;
+        height: auto;
       }
 
   }
@@ -159,7 +211,7 @@ img {
     }
 
     .aside-2 {
-      display: inline;;
+      display: inline;
     }
 
   }
