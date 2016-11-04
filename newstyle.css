@@ -106,6 +106,10 @@ img {
   flex-flow: row wrap;
 }
 
+.aside-2 {
+  display: none;
+}
+
 @media only screen and (min-width: 480px) {
 
     .nav {
@@ -137,6 +141,10 @@ img {
         flex-flow: row wrap;
       }
 
+      .aside-2 {
+        display: inline;
+      }
+
   }
 
   @media only screen and (min-width: 1140px) {
@@ -150,12 +158,8 @@ img {
       padding: 25px 1%;
     }
 
-  }
-
-  @media all and (max-width: 480px) {
-
     .aside-2 {
-      display: none;
+      display: inline;;
     }
 
   }
