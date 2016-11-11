@@ -9,7 +9,11 @@ h1 {
   font-size: 2.5rem;
   text-align: center;
   font-weight: lighter;
-  margin-bottom: 0;
+  display: flex;
+  flex-flow: row;
+  margin: 0;
+  padding: 0 10px;
+  order: 2;
 }
 
 h2 {
@@ -29,14 +33,22 @@ h2 {
   margin: auto;
 }
 
-.nav a{
-  text-decoration: none;
-  display: flex;
-  text-align:center;
+.nav a {
+    color: #f8ecc2;
+    text-decoration: none;
+    padding: 20px 30px;
+    display: flex;
+    text-align:center;
 }
 
-.nav li{
-  width: 100%
+.nav ul{
+  width: 100%;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-weight: lighter;
+  list-style-type: none;
+  float: left;
+  /*width: 25%;*/
+  font-size: 1.4rem;
 }
 
 p {
@@ -52,16 +64,7 @@ ul {
   text-align: center;
 }
 
-#nav li{
-  font-family: 'Roboto Condensed', sans-serif;
-  font-weight: lighter;
-  list-style-type: none;
-  float: left;
-  /*width: 25%;*/
-  font-size: 1.4rem;
-}
-
-#nav a:link, a:visited {
+.nav a:link, a:visited {
   display: block;
   color: #00131a;
   background-color: #ffe6ee;
@@ -73,9 +76,9 @@ ul {
   font-weight: lighter;
 }
 
-title {
-  font-family: 'Roboto Condensed', sans-serif;
-  font-weight: lighter;
+.nav ul li {
+    display: block;
+    border-top: 1px #000 solid;
 }
 
 #container{
@@ -97,7 +100,7 @@ img {
   padding-right: 1rem;
 }
 
-.header, .main, .aside {
+.main, .aside {
   flex: 1 100%;
   padding: 10px;
 }
@@ -129,20 +132,34 @@ img {
   padding-left: 10px;
 }
 
+.menu-trigger {
+    order: 1;
+    font-size: 1.75em;
+    width: 2em;
+}
+
 @media only screen and (min-width: 480px) {
 
-    .nav {
-      display: flex;
-      flex: 1;
-      flex-flow: row;
-      justify-content: space-around;
-    }
+  .menu-trigger {
+      display: none;
+  }
 
-    #nav a:hover, a:active {
-      background-color: #fff;
-      color: #00131a;
-      /*font-weight: bold;*/
-    }
+  .nav ul {
+    display: flex;
+    flex: 1;
+    flex-flow: row;
+    justify-content: space-around;
+  }
+
+  .nav ul li {
+      border-top: none;
+  }
+
+  .nav a:hover, a:active {
+    background-color: #fff;
+    color: #00131a;
+    /*font-weight: bold;*/
+  }
 
       .main {
         display: flex;
@@ -195,6 +212,10 @@ img {
       #Missourian {
         width: 10%;
         height: auto;
+      }
+
+      header h1 {
+          order: 1;
       }
 
   }
