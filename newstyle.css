@@ -35,7 +35,7 @@ nav {
   color: #f8ecc2;
 }
 
-.nav a ul {
+nav a ul {
     text-decoration: none;
     padding: 20px 30px;
     text-align:center;
@@ -57,7 +57,7 @@ ul {
   text-align: center;
 }
 
-.nav a:link, a:visited {
+nav ul a:link, nav ul a:visited {
   display: block;
   /*this makes the hamburger go away on desktop but messes everything up for mobile*/
   color: #00131a;
@@ -128,9 +128,20 @@ img {
 .menu-trigger {
     font-size: 1.75em;
     width: 2em;
+    text-decoration: none;
+    color: #00131a;
+    background-color: #ffe6ee;
+}
+
+nav ul {
+  display: none;
 }
 
 @media only screen and (min-width: 600px) {
+
+  .menu-trigger {
+      display: none;
+  }
 
   nav ul {
     display: flex;
@@ -140,22 +151,17 @@ img {
   }
 
   nav ul li {
+      display: block;
       border-top: none;
+      width: 25%; 
   }
 
-  .nav a:hover, a:active {
+  nav ul a:hover, nav ul a:active {
+    display: block;
     background-color: #fff;
     color: #00131a;
     /*font-weight: bold;*/
   }
-
-  .nav a:link, a:visited {
-    display: block;
-}
-
-.menu-trigger {
-    display: none;
-}
 
       .main {
         display: flex;
